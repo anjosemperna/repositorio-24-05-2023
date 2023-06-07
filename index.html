@@ -1,23 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gruta do passado</title>
+<html dir="ltr" lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Nova guia</title>
     <style>
-        body{
-            background-color: blueviolet;
-        }
-        h1{
-            text-align: center;
-            color: beige;
-        }
-        
+      body {
+        background: #F7F7F7;
+        margin: 0;
+      }
+
+      #backgroundImage {
+        border: none;
+        height: 100%;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        visibility: hidden;
+        width: 100%;
+      }
+
+      [show-background-image] #backgroundImage {
+        visibility: visible;
+      }
     </style>
-</head>
-<body>
-  <h1>se você qué ser novo novamente olhe para a fonte</h1>  
-  <p>papai abandonou</p>
-</body>
+  </head>
+  <body>
+    <iframe id="backgroundImage" src=""></iframe>
+    <ntp-app></ntp-app>
+    <script type="module" src="new_tab_page.js"></script>
+    <link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
+    <link rel="stylesheet" href="shared_vars.css">
+  </body>
 </html>
